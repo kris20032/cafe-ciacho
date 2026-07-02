@@ -528,6 +528,18 @@ section{padding-block:clamp(64px,8vw,128px)}
   .nav .brand{min-width:0;overflow:hidden}
 }
 
+/* === PAKIET ZAUFANIA (audyt 02.07): dyskretna plakietka oceny w rogu hero + karty realnych opinii === */
+.hg-rate{position:absolute;right:clamp(1.4rem,5vw,4rem);bottom:clamp(2.6rem,7vh,5rem);z-index:2;margin:0;
+  font-size:.92rem;font-weight:600;letter-spacing:.02em;color:#f5f1ea;white-space:nowrap;
+  background:rgba(8,6,4,.5);border:1px solid rgba(245,241,234,.28);border-radius:999px;padding:.5rem 1.05rem}
+@media(max-width:640px){.hg-rate{right:1rem;bottom:.9rem;font-size:.8rem;padding:.4rem .8rem}}
+.opinie{background:var(--cream-2,var(--paper))}
+.opinie-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:var(--space-6);margin-top:var(--space-8)}
+.op-card{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);padding:var(--space-6);display:flex;flex-direction:column;gap:var(--space-3)}
+.op-star{color:var(--accent-d,var(--accent));letter-spacing:.1em;font-size:.95rem}
+.op-card blockquote{margin:0;color:var(--ink-soft);font-size:var(--text-base);line-height:1.6}
+.op-autor{font-family:var(--font-display);font-weight:700;color:var(--ink);font-size:.95rem}
+
 /* === focal-point zdjęć (smartcrop) — cover nie utnie twarzy/obiektu === */
 img[src$="/g8.jpg"]{object-position:45% 61%}
 [style*="g8.jpg"]{background-position:45% 61%}
